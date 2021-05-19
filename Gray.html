@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="globalStylesheets.css" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<a class="specialLine hoverA centerT" href="#">Перейти наверх</a>
+	<div class="firstBlock">
+		<p>Современные способы кодирования информации</p>
+	</div>
+	
+	<main class="mainBlock">
+		<article class="content">
+			<h1>Алгоритм Грея</h1>
+			<p class="metaInfo">
+				Опубликовано 21.04.2021. Источник: 
+				<a href="https://ru.wikipedia.org/wiki/Код_Грея" class="spacialLink">
+					<span class="transfer"> https://ru.wikipedia.org/wiki/Код_Грея</span>
+				</a>
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Код Гре́я — двоичный код, иначе зеркальный код, он же код с отражением, в котором две «соседние» (в упорядоченном, то есть лексикографическом, наборе) 
+				кодовые комбинации различаются только цифрой в одном двоичном разряде. Иными словами, расстояние Хэмминга между соседними кодовыми комбинациями равно 1.
+				Наиболее часто на практике применяется рефлексивный двоичный код Грея, хотя в общем случае существует бесконечное множество кодов Грея со значениями цифр в разрядах, взятых из различных алфавитов. В
+				большинстве случаев, под термином «код Грея» понимают именно рефлексивный бинарный код Грея.
+				Изначально предназначался для защиты от ложного срабатывания электромеханических переключателей. Сегодня коды Грея широко используются для упрощения выявления и исправления 
+				ошибок в системах связи, а также в формировании сигналов обратной связи в системах управления.
+			</p>	
+			<p class="paragraph"><span class="redLine"></span>
+				Код Грея назван «рефлексивным» (отражённым) из-за того, что первая половина значений при изменении порядка эквивалентна второй половине, 
+				за исключением старшего бита. Старший бит просто инвертируется. При делении каждой новой половины пополам это свойство сохраняется (см. самоподобие).
+				Код назван в честь исследователя Фрэнка Грея, работавшего в лаборатории «Bell labs». Грей запатентовал (патент № 2632058) и впервые использовал этот код в своей импульсной системе связи.
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Коды Грея легко получаются из двоичных чисел путём побитовой операции «Исключающее ИЛИ» с тем же числом,
+				сдвинутым вправо на один бит и в котором старший разряд заполняется нулём. Следовательно, i-й бит кода Грея Gi выражается через биты двоичного кода Bi следующим образом:
+			</p>
+			<br><img src="grey1.png"></img><br>
+			<p class="paragraph"><span class="redLine"></span>
+				Обратный алгоритм — преобразование кода Грея в двоичный код — можно выразить рекуррентной формулой:
+			</p>
+			<br><img src="grey2.png"></img><br>
+			<p class="paragraph"><span class="redLine"></span>
+				причём преобразование осуществляется побитно, начиная со старших разрядов, и значение
+			</p>	
+			<br><img src="grey3.png"></img><br>
+			<p class="paragraph"><span class="redLine"></span>
+				используемое в формуле, вычисляется на предыдущем шаге алгоритма. Действительно, если подставить в эту формулу вышеприведённое выражение 
+				для i-го бита кода Грея, получим
+			</p>
+			<br><img src="grey4.png"></img><br>
+			<p class="paragraph"><span class="redLine"></span>
+				Однако приведённый алгоритм, связанный с манипуляцией отдельными битами, неудобен для программной реализации, 
+				поэтому на практике используют видоизменённый алгоритм:
+			</p>
+			<br><img src="grey5.png"></img><br>
+		</article>
+		
+		<div class="rail" name="simple">
+			<ul class="linkUlBlock">
+				<li class="normalBorder"><a href="index.html" class="centerT  hoverA">Главная</a></li>	
+				<li class="normalBorder"><a href="#simple" class="dropdownLi centerT  hoverA">Алгоритмы кодирования</a>
+					<ul class="dropdown">
+						<li class="topSubLink"><a href="Huffman.html" class="centerT  hoverA">Алгоритм Хаффмана</a></li>
+						<li class="normalBorder"><a href="Shannon.html" class="centerT  hoverA">Алгоритм Шеннона-Фано</a></li>
+						<li class="bottomSubLink"><a href="Gray.html" class="centerT  hoverA">Алгоритм Грейя</a></li>
+					</ul>
+				</li>
+				<li class="normalBorder"><a href="#simple" class="dropdownLi centerT  hoverA">Направления теории кодирования</a>
+					<ul class="dropdown">
+						<li class="topSubLink"><a href="compression.html" class="centerT  hoverA">Сжатие данных</a></li>
+						<li class="normalBorder"><a href="cryptography.html" class="centerT  hoverA">Криптография</a></li>
+						<li class="normalBorder"><a href="phisic.html" class="centerT  hoverA">Физическое кодирование</a></li>
+						<li class="bottomSubLink"><a href="errorc.html" class="centerT  hoverA">Обнаружение и исправление ошибок</a></li>
+					</ul>
+				</li>
+				<li class="normalBorder"><a href="format.html" class="centerT  hoverA">Форматы данных</a></li>
+				<li class="normalBorder"><a href="interpretation.html" class="centerT  hoverA">Представление данных в ЭВМ</a></li>
+				<li class="normalBorder"><a href="AllArticle.html" class="centerT  hoverA">Список статей</a></li>
+				<li class="normalBorder"><a href="aboutMe.html" class="centerT  hoverA">Обо мне</a></li>
+			</ul>	
+		</div>
+	</main>
+	
+	<footer>
+		<br>
+		<p>
+			<span>22.04.2021</span>
+			<span><a class="spacialLink" href="aboutSite.html">обо мне</a></span>
+			<span>связаться: mail@gmail.com</span>
+		</p>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

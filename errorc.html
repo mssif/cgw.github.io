@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="globalStylesheets.css" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<a class="specialLine hoverA centerT" href="#">Перейти наверх</a>
+	<div class="firstBlock">
+		<p>Современные способы кодирования информации</p>
+	</div>
+	
+	<main class="mainBlock">
+		<article class="content">
+			<h1>Обнаружение и исправление ошибок</h1>
+			<p class="metaInfo">
+				Опубликовано 21.04.2021. Источник: 
+				<a href=" https://ru.wikipedia.org/wiki/Контроль_ошибок" class="spacialLink">
+					<span class="transfer"> https://ru.wikipedia.org/wiki/Контроль_ошибок</span>
+				</a>
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Контроль ошибок состоит в обнаружении и исправлении ошибок в данных при их записи и воспроизведении или передаче по линиям связи.
+				Контроль целостности данных и исправление ошибок — важные задачи на многих уровнях работы с информацией (в частности, физическом, канальном, транспортном уровнях сетевой модели OSI)
+				в связи с тем, что в процессе хранения данных и передачи информации по сетям связи неизбежно возникают ошибки. Различные области применения контроля ошибок диктуют различные 
+				требования к используемым стратегиям и кодам.
+				В системах связи возможны несколько стратегий борьбы с ошибками:
+			</p>	
+			<p class="paragraph"><span class="redLine"></span>
+				1 обнаружение ошибок в блоках данных и автоматический запрос повторной передачи повреждённых блоков — этот подход применяется, в основном, на канальном и транспортном уровнях;
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				2 обнаружение ошибок в блоках данных и отбрасывание повреждённых блоков — такой подход иногда применяется в системах потокового мультимедиа, где важна задержка передачи и нет времени на повторную передачу;
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				3 упреждающая коррекция ошибок добавляет к передаваемой информации такие дополнительные данные, которые позволяют исправить ошибки без дополнительного запроса.
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Классический алгоритм Хаффмана на входе получает таблицу частот встречаемости символов в сообщении. Далее на 
+				основании этой таблицы строится дерево кодирования Хаффмана (Н-дерево).
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				В контроле ошибок, как правило, используется помехоустойчивое кодирование — кодирование данных при записи или передаче и декодирование при считывании или получении при помощи 
+				корректирующих кодов, которые и позволяют обнаружить и, возможно, исправить ошибки в данных. Алгоритмы помехоустойчивого кодирования в различных приложениях могут быть реализованы 
+				как программно, так и аппаратно.
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				При передаче информации по каналу связи вероятность ошибки зависит от отношения сигнал/шум на входе демодулятора, таким образом, 
+				при постоянном уровне шума решающее значение имеет мощность передатчика. В системах спутниковой и мобильной, а также других типов связи остро стоит вопрос 
+				экономии энергии. Кроме того, в определённых системах связи (например, телефонной) неограниченно повышать мощность сигнала не дают технические ограничения.
+				Поскольку помехоустойчивое кодирование позволяет исправлять ошибки, при его применении мощность передатчика можно снизить, оставляя скорость передачи информации неизменной. 
+				Энергетический выигрыш определяется как разница отношений с/ш при наличии и отсутствии кодирования.
+			</p>
+		</article>
+		
+		<div class="rail" name="simple">
+			<ul class="linkUlBlock">
+				<li class="normalBorder"><a href="index.html" class="centerT  hoverA">Главная</a></li>	
+				<li class="normalBorder"><a href="#simple" class="dropdownLi centerT  hoverA">Алгоритмы кодирования</a>
+					<ul class="dropdown">
+						<li class="topSubLink"><a href="Huffman.html" class="centerT  hoverA">Алгоритм Хаффмана</a></li>
+						<li class="normalBorder"><a href="Shannon.html" class="centerT  hoverA">Алгоритм Шеннона-Фано</a></li>
+						<li class="bottomSubLink"><a href="Gray.html" class="centerT  hoverA">Алгоритм Грейя</a></li>
+					</ul>
+				</li>
+				<li class="normalBorder"><a href="#simple" class="dropdownLi centerT  hoverA">Направления теории кодирования</a>
+					<ul class="dropdown">
+						<li class="topSubLink"><a href="compression.html" class="centerT  hoverA">Сжатие данных</a></li>
+						<li class="normalBorder"><a href="cryptography.html" class="centerT  hoverA">Криптография</a></li>
+						<li class="normalBorder"><a href="phisic.html" class="centerT  hoverA">Физическое кодирование</a></li>
+						<li class="bottomSubLink"><a href="errorc.html" class="centerT  hoverA">Обнаружение и исправление ошибок</a></li>
+					</ul>
+				</li>
+				<li class="normalBorder"><a href="format.html" class="centerT  hoverA">Форматы данных</a></li>
+				<li class="normalBorder"><a href="interpretation.html" class="centerT  hoverA">Представление данных в ЭВМ</a></li>
+				<li class="normalBorder"><a href="AllArticle.html" class="centerT  hoverA">Список статей</a></li>
+				<li class="normalBorder"><a href="aboutMe.html" class="centerT  hoverA">Обо мне</a></li>
+			</ul>	
+		</div>
+	</main>
+	
+	<footer>
+		<br>
+		<p>
+			<span>22.04.2021</span>
+			<span><a class="spacialLink" href="aboutSite.html">обо мне</a></span>
+			<span>связаться: mail@gmail.com</span>
+		</p>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="globalStylesheets.css" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<a class="specialLine hoverA centerT" href="#">Перейти наверх</a>
+	<div class="firstBlock">
+		<p>Современные способы кодирования информации</p>
+	</div>
+	
+	<main class="mainBlock">
+		<article class="content">
+			<h1>Криптография</h1>
+			<p class="metaInfo">
+				Опубликовано 21.04.2021. Источник: 
+				<a href="https://ru.wikipedia.org/wiki/Криптография" class="spacialLink">
+					<span class="transfer"> https://ru.wikipedia.org/wiki/Криптография</span>
+				</a>
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Криптогра́фия (от др.-греч. κρυπτός «скрытый» + γράφω «пишу») — наука о методах обеспечения конфиденциальности 
+				(невозможности прочтения информации посторонним), целостности данных (невозможности незаметного изменения информации), аутентификации 
+				(проверки подлинности авторства или иных свойств объекта), шифрования (кодировка данных).
+				Изначально криптография изучала методы шифрования информации — обратимого преобразования открытого (исходного) текста на основе секретного алгоритма или 
+				ключа в шифрованный текст (шифротекст). Традиционная криптография образует раздел симметричных криптосистем, в которых зашифровывание и расшифровывание 
+				проводится с использованием одного и того же секретного ключа.
+			</p>	
+			<p class="paragraph"><span class="redLine"></span>
+				Пример:Шифр АТБАШ, в котором ключом является перевёрнутый алфавит того языка, на котором шифруется текст.
+				Помимо этого раздела современная криптография включает в себя асимметричные криптосистемы, системы электронной цифровой подписи (ЭЦП), хеш-функции, 
+				управление ключами, получение скрытой информации, квантовую криптографию.
+				Криптография не является защитой от обмана, подкупа или шантажа законных абонентов, кражи ключей и других угроз информации, возникающих в защищённых 
+				системах передачи данных.
+				Криптография — одна из старейших наук, её история насчитывает несколько тысяч лет.
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Для современной криптографии характерно использование открытых алгоритмов шифрования, предполагающих использование 
+				вычислительных средств. Известно более десятка проверенных алгоритмов шифрования, которые при использовании ключа достаточной длины и корректной 
+				реализации алгоритма криптографически стойки. Распространённые алгоритмы:
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				1 симметричные DES, AES, ГОСТ 28147-89, Camellia, Twofish, Blowfish, IDEA, RC4 и др.;
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				2 асимметричные RSA и Elgamal (Эль-Гамаль);
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				3 хеш-функций MD4, MD5, MD6, SHA-1, SHA-2, ГОСТ Р 34.11-2012 («Стрибог»).
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Криптографические методы стали широко использоваться частными лицами в электронных коммерческих операциях, телекоммуникациях и многих других средах.
+			</p>
+			<p class="paragraph"><span class="redLine"></span>
+				Во многих странах приняты национальные стандарты шифрования. В 2001 году в США принят стандарт симметричного шифрования AES на основе алгоритма Rijndael с 
+				длиной ключа 128, 192 и 256 бит. Алгоритм AES пришёл на смену прежнему алгоритму DES, который теперь рекомендовано использовать только в режиме Triple DES.
+				В Российской Федерации действует стандарт ГОСТ 34.12-2015 с режимами шифрования блока сообщения длиной 64 («Магма») и 128 («Кузнечик») битов, и длиной ключа 256 бит. 
+				Также, для создания цифровой подписи используется алгоритм ГОСТ Р 34.10-2012.
+			</p>
+		</article>
+		
+		<div class="rail" name="simple">
+			<ul class="linkUlBlock">
+				<li class="normalBorder"><a href="index.html" class="centerT  hoverA">Главная</a></li>	
+				<li class="normalBorder"><a href="#simple" class="dropdownLi centerT  hoverA">Алгоритмы кодирования</a>
+					<ul class="dropdown">
+						<li class="topSubLink"><a href="Huffman.html" class="centerT  hoverA">Алгоритм Хаффмана</a></li>
+						<li class="normalBorder"><a href="Shannon.html" class="centerT  hoverA">Алгоритм Шеннона-Фано</a></li>
+						<li class="bottomSubLink"><a href="Gray.html" class="centerT  hoverA">Алгоритм Грейя</a></li>
+					</ul>
+				</li>
+				<li class="normalBorder"><a href="#simple" class="dropdownLi centerT  hoverA">Направления теории кодирования</a>
+					<ul class="dropdown">
+						<li class="topSubLink"><a href="compression.html" class="centerT  hoverA">Сжатие данных</a></li>
+						<li class="normalBorder"><a href="cryptography.html" class="centerT  hoverA">Криптография</a></li>
+						<li class="normalBorder"><a href="phisic.html" class="centerT  hoverA">Физическое кодирование</a></li>
+						<li class="bottomSubLink"><a href="errorc.html" class="centerT  hoverA">Обнаружение и исправление ошибок</a></li>
+					</ul>
+				</li>
+				<li class="normalBorder"><a href="format.html" class="centerT  hoverA">Форматы данных</a></li>
+				<li class="normalBorder"><a href="interpretation.html" class="centerT  hoverA">Представление данных в ЭВМ</a></li>
+				<li class="normalBorder"><a href="AllArticle.html" class="centerT  hoverA">Список статей</a></li>
+				<li class="normalBorder"><a href="aboutMe.html" class="centerT  hoverA">Обо мне</a></li>
+			</ul>	
+		</div>
+	</main>
+	
+	<footer>
+		<br>
+		<p>
+			<span>22.04.2021</span>
+			<span><a class="spacialLink" href="aboutSite.html">обо мне</a></span>
+			<span>связаться: mail@gmail.com</span>
+		</p>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

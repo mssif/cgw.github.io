@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400&family=PT+Sans:ital@0;1&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "PT Sans", sans-serif;
+}
+
+.firstBlock{
+	background-color: #60d4d7; 
+	height: 2.5rem;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	border-bottom: 0.2em solid black;
+}
+
+.firstBlock p{ 	
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 1.5rem;
+}
+
+.mainBlock{
+	width: 76%;
+	display: flex;
+	margin: auto;
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+	min-height: 82vh;
+}
+
+.content{
+	width: 77%;
+	padding: 1em;
+	margin: 1em;
+	margin-top: 0;
+	box-shadow: 0 0 0.3em #999;
+}
+
+.content .paragraph{
+	text-align: justify;	
+	line-height: 1.8;
+	font-size: 1.1rem;
+}
+
+.content h1{
+	text-decoration: bold;
+	font-size: 2rem;
+}
+
+.redLine{
+	margin-left: 2rem;
+}
+
+.metaInfo{
+	font-size: 1rem;
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
+.rail{
+	width: 23%;
+}
+
+.linkUlBlock{
+	list-style-type: none;
+	background-color: #60d4d7;
+	position: sticky;
+	width: 100%;
+	top: 0.8em;
+}
+
+.linkUlBlock ul{
+	list-style-type: none;
+}
+
+.linkUlBlock li a{
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 1.1rem;
+}
+
+.normalBorder{
+	border-bottom: 0.2em solid white;
+}
+
+.bottomSubLink {
+	border-bottom: 0px solid white;
+	border-top: 0px solid white;
+}
+
+.topSubLink {
+	border-bottom: 0.2em solid white;
+	border-top: 0.2em solid white;
+}
+
+.centerT {
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+}
+
+.hoverA:hover {
+  outline: black solid 1px;
+  cursor: pointer;
+}
+
+.dropdown{
+	display: none;
+}
+
+.transfer {
+	overflow-wrap: break-word;
+}
+
+.dropdownLi:focus ~ .dropdown, 
+.dropdownLi:active ~ .dropdown, 
+.dropdown:hover{
+	display: block;
+	background: #209497;
+}
+
+footer{
+	width: 100%;
+	height: 4em; 
+	background-color: #222;
+	color: white;
+}
+
+footer p{
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin:auto;
+}
+
+a { 	
+	color: black;  
+	text-decoration: none;  
+}
+
+img {
+	margin: auto;
+	margin-top: 1.5em;
+	display: block; 
+	max-width: 90%;
+}
+
+.spacialLink{
+	text-decoration: underline;  
+	color: inherit;
+}
+
+.specialLine{
+	display: none;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 1.1rem;
+	background-color: #60d4d7;
+	margin-bottom: 0.2em;
+	top: 0;
+	z-index: 1;
+	position: sticky;
+	border-bottom: 0.1em solid black;
+}
+
+.quotesContainer{
+	display: flex;
+	justify-content: space-between;
+}
+.quotes{
+	width: 32%;
+	font-size: 1rem;
+	text-align: justify;	
+}
+.quotes img{
+	width: 100%;
+	height: 50vh;
+	object-fit:cover;
+	max-width: none;
+}
+.quotes p{
+	padding: 10px;
+}
+
+.specialContent{
+	width: 77%;
+	margin: 1em;
+	margin-top: 0;
+}
+.specialContent .content{
+	margin: 1em 0;
+	width: auto;
+}
+.specialContent .content:first-child{
+	margin: 0;
+	margin-bottom: 1em;
+	width: auto;
+}
+.specialContent .content:last-child{
+	margin: 0;
+	margin-top: 1em;
+	width: auto;
+}
+.rightButton{
+	margin-top: 10px;
+}
+.rightButton a{
+	background-color: #60d4d7;
+	padding: 0 10px;
+	color: black;  
+	text-decoration: none;  
+}
+
+@media (max-width: 1000px) {
+.mainBlock{
+	width: auto;
+	margin: 0em;
+	padding: 1em;
+}
+.content{
+	margin-left: 0em;
+}
+}
+
+@media (max-width: 720px) {
+.firstBlock{
+	display: none;
+}
+.rail{
+	width: 100%;
+	margin: 0; 
+	pading: 0;
+}
+.content{
+	padding: 5%;
+	width: 90%;
+	margin: 0em;
+	box-shadow: none;
+}
+.mainBlock{
+	width: calc(100%-1em);
+	margin: 0;
+	padding: 0;
+	/*flex-wrap: wrap; */
+	flex-direction: column-reverse;
+}
+.specialLine{
+	display: block;
+}
+footer p{
+	width: 100%;
+}
+.quotesContainer{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.quotes{
+	width: 70%;
+	font-size: 1rem;
+	text-align: justify;	
+}
+.quotes img{
+	height: 70vh;
+}
+.quotesContainer{
+	align-items: center;
+}
+.specialContent{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+}
+
+@media (max-width: 480px) {
+.firstBlock{
+	display: none;
+}
+.rail{
+	width: 100%;
+	margin: 0; 
+	pading: 0;
+}
+.content{
+	padding: 2%;
+	width: 96%;
+	margin: 0em;
+	box-shadow: none;
+}
+.content .paragraph{
+	text-align: justify;	
+	line-height: 1.5;
+	font-size: 1rem;
+}
+.mainBlock{
+	width: calc(100%-1em);
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap; 
+	flex-direction: column-reverse;
+}
+.specialLine{
+	display: block;
+}
+footer{
+	height: 7em;
+}
+footer p {
+	flex-direction: column; 
+	width: 100%;
+}
+.quotes{
+	width: 85%;
+	font-size: 1rem;
+	text-align: justify;	
+}
+}
+
+@media (max-width: 380px) {
+	.quotes img{
+		height: 50vh;
+	}
+}
